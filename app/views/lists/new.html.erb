@@ -1,0 +1,13 @@
+<%= form_for @list do |f|%>
+
+    <div class="form-group">
+
+        <%= f.label :name %>
+        <br/>
+        <%= f.text_field :name %>
+    </div>
+
+    <%= f.submit "Submit" ,class:"btn btn-primary"%>
+    <%= link_to "Cancel" , lists_path, class:"btn btn-default"%>
+
+<%end%>
